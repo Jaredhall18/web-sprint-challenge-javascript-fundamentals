@@ -26,7 +26,7 @@ Edit this document to include your answers after each question. Make sure to lea
 
 1. Explain the differences between `.map`, `.reduce` and `.filter` and describe a use case for each. 
 
-.map is used to run through an array and make changes to an item based on the argument you pass through it. You could use this method to return an array containing just the values associated with a specified key from an array containing multiple objects.
+.map is used to run through an array and make changes to an item based on the argument you pass through it. You could use this method to take an array of numbers and return an array of those numbers multiplied by a number. Or take an array of objects, and return an array with just the values from the first key from each item.
 
 .reduce is used to return a value from an array. It can generate a sum or product from a list of objects. An example would be to use reduce to return a sum of total sales from an array of objects listing monthly sales for a company.
 
