@@ -26,13 +26,33 @@ Edit this document to include your answers after each question. Make sure to lea
 
 1. Explain the differences between `.map`, `.reduce` and `.filter` and describe a use case for each. 
 
+.map is used to run through an array and make changes to an item based on the argument you pass through it. You could use this method to return an array containing just the values associated with a specified key from an array containing multiple objects.
+
+.reduce is used to return a value from an array. It can generate a sum or product from a list of objects. An example would be to use reduce to return a sum of total sales from an array of objects listing monthly sales for a company.
+
+.filter uses a conditional to filter through data and return a value into a new array if it is true based on the conditional. An example would be pulling all customers who have purchased over a specified $$ amount from an array containing objects representing customer data.
+
 2. Explain the difference between a callback and a higher order function.
+
+A higher order function is a function that receives another function as a parameter. A callback function is a function that is passed into a higher order function as an argument.
 
 3. Explain what a closure is.
 
+You are able to nest functions within other functions. Even though functions are not able to reach out of their own scope to grab a variable defined elsewhere, a child function is able to bypass this rule and access variables from their parent. When this occurs, it is referred to as a closure.
+
 4. Describe the four principles of the 'this' keyword.
 
-5. Why do we need super() in an extended class?
+Window binding - When 'this' is used in global scope, it points to the window or console because we have not given 'this' any context.
+
+Implicit Binding - When 'this' is used within a method, this refers to the object or variable to the left of the .(dot).
+
+Explicit Binding  - We tell a function what "this" refers to using .call, .apply, or .bind.
+
+New Binding - When the 'new' keyword is used to invoke a function and that function contains 'this' inside, 'this' will be bound to the new object that is created. The same will occur if the invoked function is a constructor function.
+
+5. Why do we need super() in an extended class? 
+
+super() calls all of the properties that were assigned to the Parent class and assigns them to the child. It is a requirement when creating subclasses.
 
 You are expected to be able to answer questions in these areas. Your responses contribute to your Sprint Challenge grade. 
 
